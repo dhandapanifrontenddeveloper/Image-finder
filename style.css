@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sideheading{
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+    padding: 10px;
+    
+
+}
+
+.sideimage{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.log, .license{
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.heading{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.searchbox{
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    font-size: 15px;
+    color: black;
+}
+.seachbtn{
+    padding: 10px 20px;
+    background-color: #F24E1E;
+    font-size: 15px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.imageresult{
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.images{
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.images img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+   
+}
+.images :hover img{
+  opacity: 0.8;
+}
+.images a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif; 
+    
+}
+.morebtn{
+    background-color: #57B227;
+    border: none;
+    font-size: 15px;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-align: center;
+    margin: 30px auto;
+    color: white;
+    display: none;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 768px){
+    .images{
+        width: 45%;
+       
+    }
+    .imageresult{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .images{
+        width: 100% ;
+        
+    }
+    .log, .license{
+        display: none;
+    }
+    .sideimage{
+        margin-top: -25px;
+        width: 30px;
+        height: 30px;
+       
+    }
+
+    .logoimg{
+        width: 70px;
+    height: auto;
+    }
+    
+}
